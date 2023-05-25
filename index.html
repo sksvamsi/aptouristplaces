@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="touristplaces.css">
+  </head>
+  <body>
+    <div id="sectionhome">
+        <div class="bg-container  d-flex flex-column justify-content-end">
+            <div class="tourcard ">
+              <h1 class="main-headings">
+                Tourism
+              </h1>
+              <p class="paragraph">
+                Plan your trip.
+              </p>
+              <button class="button" onclick="display('sectiontouristplaces')"> Get Started </button>
+           </div>
+          </div>
+    </div>
+
+    <div id="sectiontouristplaces">
+        <div class="main-page">
+            <h1 class="main-heading">AP TOURIST PLACES</h1>
+         <div class="place1 d-flex flex-row" onclick="display('sectiondetailedview1')">
+            <div>
+                <h1 class="heading">vijayawada</h1>
+                <p class="information">Vijayawada is a city in the southeast Indian state of Andhra Pradesh. It's known for the ornate Kanaka Durga Temple, which sits atop a hill overlooking the city. The Undavalli Caves feature ancient rock-cut temples, carved out of a sandstone hillside and adorned with elaborate statues. The massive Prakasam Barrage stretches across the Krishna River. Nearby is Bhavani Island, with forests and waterfront gardens.</p>
+            </div>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/67/f0/bf/kanaka-durga-temple.jpg" class="image1"/> 
+        </div>
+    
+        <div class="place1 d-flex flex-row" onclick="display('sectiondetailedview2')">
+            <div>
+                <h1 class="heading">Tirupathi</h1>
+                <p class="information">Tirupati is a city in the Indian state of Andhra Pradesh. Its Sri Venkateswara Temple sits atop one of the the 7 peaks of Tirumala Hills, attracting scores of Hindu pilgrims. Sri Venkateswara National Park, home to the temple, also contains the Sri Venkateswara Zoological Park with lions and primates. Nearby, next to a waterfall and cave believed to be sacred, Sri Kapileswara Swamy Temple is dedicated to Lord Shiva.</p>
+            </div>
+            <img src="https://media.istockphoto.com/id/1268716417/photo/misty-tirupathi.jpg?s=612x612&w=0&k=20&c=6tcFZEteaY9mOhZADzIRo8b8NmUqCEmsO6ZIgbfjGW0=" class="image1"/> 
+        </div>
+    
+        <div class="place1 d-flex flex-row" onclick="display('sectiondetailedview3')">
+            <div>
+                <h1 class="heading">Sri kalahasthi</h1>
+                <p class="information">Srikalahasti temple, situated 36 km away from Tirupati is famous for its Vayu Lingam (Wind Lingam), one of the Panchabhoota Sthalams, representing wind. The temple is also regarded as Rahu-Ketu kshetra and Dakshina Kailasam.</p>
+            </div>
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/225_20180122214045.jpg" class="image1"/> 
+        </div>
+    
+        <div class="place1 d-flex flex-row" onclick="display('sectiondetailedview4')">
+            <div>
+                <h1 class="heading">Kanipakam</h1>
+                <p class="information">Kanipakam is a small mini town in Irala mandal, located in Chittoor district of the Indian state of Andhra Pradesh. Kanipakam is situated at a distance of 11 km from Chittoor city on chittoor-Irala road</p>
+            </div>
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/VinayakaTemple_20200508120615.jpg" class="image1"/> 
+        </div>
+        <button class="btns" onclick="display('sectionhome')">back</button>   
+        </div>
+    </div>
+
+    <div id="sectiondetailedview1">
+        <div class="main-background">
+            <h1 class="main-heading">Vijayawada</h1>
+            <div class="card-container">
+             <div>
+                <div id="vijayawadacarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#vijayawadacarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#vijayawadacarousel" data-slide-to="1"></li>
+                      <li data-target="#vijayawadacarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-5es47s445rj00d9a9om2oecdf1-20160414055346.Medi.jpeg"
+                          class="d-block w-100"
+                          alt="vijayawada-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://www.go2india.in/ap/images/vijayawada-kanaka-durga-temple-view.JPG"
+                          class="d-block w-100"
+                          alt="vijayawada-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://discoverindiasite.files.wordpress.com/2015/12/23019376190_fc2fb038e6_z_d.jpg?w=640"
+                          class="d-block w-100"
+                          alt="vijayawada-image"
+                        />
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#vijayawadacarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#vijayawadacarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <div class="heading2">
+                <h1 class="title-heading">Vijayawada</h1>
+                <p>Vijayawada is a city in the southeast Indian state of Andhra Pradesh. It's known for the ornate Kanaka Durga Temple, which sits atop a hill overlooking the city. The Undavalli Caves feature ancient rock-cut temples, carved out of a sandstone hillside and adorned with elaborate statues. The massive Prakasam Barrage stretches across the Krishna River. Nearby is Bhavani Island, with forests and waterfront gardens.</p>
+            </div>     
+    
+             </div>  
+            </div>
+            <button class="btn btn-primary" onclick="display('sectiontouristplaces')">back</button>
+        </div>
+    </div>
+
+
+    <div id="sectiondetailedview2">
+        <div class="main-background">
+            <h1 class="main-heading">Tirupathi</h1>
+            <div class="card-container">
+             <div>
+                <div id="tirupathicarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#tirupathicarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#tirupathicarousel" data-slide-to="1"></li>
+                      <li data-target="#tirupathicarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://assets-news.housing.com/news/wp-content/uploads/2022/08/17225125/places-to-visit-in-tirupati-FEATURE-compressed.jpg"
+                          class="d-block w-100"
+                          alt="tirupathi-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://static.theprint.in/wp-content/uploads/2020/06/Tirupati-e1597050074221.jpg"
+                          class="d-block w-100"
+                          alt="tirupathi-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://t4.ftcdn.net/jpg/05/30/52/75/360_F_530527537_ivZCcQClE5grZ5on0Bf364QZMPYgYHV8.jpg"
+                          class="d-block w-100"
+                          alt="tirupathi-image"
+                        />
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#tirupathicarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#tirupathicarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <div class="heading2">
+                <h1 class="title-heading">Tirupathi</h1>
+                <p>Venkateswara Temple is a landmark Vaishnavite temple situated in the hill town of Tirumala at Tirupati in Chittoor district of Andhra Pradesh, India. The Temple is dedicated to Lord Sri Venkateswara, an incarnation of Vishnu, who is believed to have appeared here to save mankind from trials and troubles of Kali Yuga. Hence the place has also got the name Kaliyuga Vaikuntham and Lord here is referred to as Kaliyuga Prathyaksha Daivam. The temple is also known by other names like Tirumala Temple, Tirupati Temple, Tirupati Balaji Temple. Lord Venkateswara is known by many other names: Balaji, Govinda, and Srinivasa.   
+                </p>
+                </div>
+             </div>  
+            </div>
+            <button class="btn btn-primary" onclick="display('sectiontouristplaces')">back</button>
+        </div>
+    </div>
+
+    <div id="sectiondetailedview3">
+        <div class="main-background">
+            <h1 class="main-heading">Srikalahasti</h1>
+            <div class="card-container">
+             <div>
+                <div id="srikalahasthicarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#srikalahasthicarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#srikalahasthicarousel" data-slide-to="1"></li>
+                      <li data-target="#srikalahasthicarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://i0.wp.com/srikalahasthitemple.com/wp-content/uploads/2020/01/12800230_1066951560023565_3787066315301362051_n.jpg?resize=768%2C430&ssl=1"
+                          class="d-block w-100"
+                          alt="srikalahasthi-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://i0.wp.com/srikalahasthitemple.com/wp-content/uploads/2020/01/10984559_877179542334102_5292272037271817961_o.jpg?resize=768%2C576&ssl=1"
+                          class="d-block w-100"
+                          alt="srikalahasthi-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://i0.wp.com/srikalahasthitemple.com/wp-content/uploads/2020/01/78213168_1321862277994766_4754848488267710464_o.jpg?resize=768%2C511&ssl=1"
+                          class="d-block w-100"
+                          alt="srikalahasthi-image"
+                        />
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#srikalahasthicarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#srikalahasthicarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <div class="heading2">
+                <h1 class="title-heading">Srikalahasti</h1>
+                <p>to ancient Tamil sources Sri Kalahasti has been known as the ‘Kailas of the South’ for slightly more than two thousand years and the small river on whose banks it sits, the ‘Ganges of the South.’ Kailas is perhaps India’s most revered spiritual symbol. It is the abode of Shiva, from whose head, according to legend, the Ganges is said to flow. Shiva, ‘that which is auspicious at all places, times and in all circumstances’ is a symbol of the Self and the Ganges flowing from his head represents the spiritualized or awakened mind. A mind sourced in Spirit is a river of immeasurable power and life-giving goodness.</p>
+                </div>
+             </div>  
+            </div>
+            <button class="btn btn-primary" onclick="display('sectiontouristplaces')">back</button>
+        </div>
+    </div>
+
+
+    <div id="sectiondetailedview4">
+        <div class="main-background">
+            <h1 class="main-heading">Kanipakam</h1>
+            <div class="card-container">
+             <div>
+                <div id="kanipakamcarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#kanipakamcarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#kanipakamcarousel" data-slide-to="1"></li>
+                      <li data-target="#kanipakamcarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://www.holidify.com/images/cmsuploads/compressed/Kanipakam1_20200508124710_20200508124815.jpg"
+                          class="d-block w-100"
+                          alt="srikalahasthi-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/2e/8a/55/the-temple-at-dusk.jpg?w=1200&h=1200&s=1"
+                          class="d-block w-100"
+                          alt="srikalahasthi-image"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://d3rk2wqy1pqubb.cloudfront.net/wp-content/uploads/2022/10/kanipakam-varasiddhi-vinaya.jpg?w=1280&enlarge=true"
+                          class="d-block w-100"
+                          alt="srikalahasthi-image"
+                        />
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#kanipakamcarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#kanipakamcarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <div class="heading2">
+                <h1 class="title-heading">Kanipakam</h1>
+                <p>“KANI” means one and a quarter land and, “PAKAM ” means the flow of water into the land i.e., irrigation. This temple has a legend which runs as follows in brief. There are three Handicapped brothers Dumb, Deaf and Blind and all the three used to live by cultivating a small piece of land. While so, when two of them were engaged in padding to lift water through a channel to their wet land, after some time they came to know that water in the well was over. One person got into the well in order to deepen the well, with a weapon, it hit a rock. There he observed that the blood coming out from the stone and with the result whole water was turned into a red color.
+            </p>
+                </div>
+             </div>  
+            </div>
+            <button class="btn btn-primary" onclick="display('sectiontouristplaces')">back</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+  </html>
+  
